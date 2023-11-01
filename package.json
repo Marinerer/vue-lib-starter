@@ -1,0 +1,20 @@
+{
+  "name": "vue-start2",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "reinstall": "rm -rf node_modules && rm -rf */node_modules && rm -rf **/*/node_modules && pnpm install",
+    "vue2": "pnpm use:vue2 && pnpm -F vue2 run dev",
+    "vue3": "pnpm use:vue3 && pnpm -F vue3 run dev",
+    "use:vue2": "vue-demi-switch 2.7 vue",
+    "use:vue3": "vue-demi-switch 3 vue"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vue-demi": "latest"
+  }
+}
