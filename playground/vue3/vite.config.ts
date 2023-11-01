@@ -12,11 +12,9 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      'vue': fileURLToPath(new URL('./node_modules/vue', import.meta.url)),
+      'vue': 'vue3',
+      '@lib': fileURLToPath(new URL('../../lib', import.meta.url)),
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  },
-  optimizeDeps: {
-    exclude: ['vue-demi']
   }
 })
